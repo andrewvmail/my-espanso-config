@@ -32,3 +32,17 @@ matches:
         console.log("ormArray");
         console.log(array);
       };
+
+  - trigger: ":page"
+    replace: |
+      import React from "react";
+      import { useActions, useAppState } from "../overmind";
+
+      const Page = () => {
+        return (
+          <>
+          </>
+        );
+      };
+      export default Page;
+
