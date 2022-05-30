@@ -17,3 +17,18 @@ matches:
         type: shell
         params:
           cmd: "echo 'Hello from your shell'"
+
+  - trigger: ":action"
+    replace: "export const someAction = async ({ state, effects, actions }: Context) => { };"
+
+  - trigger: ":ormGet"
+    replace: |
+      export const ormGet = async ({ state, effects, actions }: Context) => {
+        const array = await effects.orm
+          .getRepository()
+          .createQueryBuilder("")
+          .getMany();
+
+        console.log("ormArray");
+        console.log(array);
+      };
