@@ -95,3 +95,10 @@ matches:
       export default SomeFormPage;
 
 
+  - trigger: ":mark"
+    replace: |
+      console.log("🛑");
+      console.log() 
+      console.log("🛑");
+
+
