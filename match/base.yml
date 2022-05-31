@@ -101,4 +101,8 @@ matches:
       console.log() 
       console.log("🛑");
 
+  - trigger: ":effect"
+    replace: |
+      React.useEffect(() => {}, []);
+
 
