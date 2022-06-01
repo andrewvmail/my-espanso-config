@@ -117,5 +117,7 @@ matches:
     replace: |
       import * as actions from "./actions"; import { state } from "./state"; export { state, actions };
 
-
+  - trigger: ":lorem"
+    replace: |
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut molestie tempus mi vel venenatis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus molestie fringilla elit, sed feugiat velit feugiat non. Mauris sit amet viverra dui. In eleifend tellus arcu, non ullamcorper est dignissim nec. Nulla accumsan scelerisque blandit. Sed dolor nunc, tempus at maximus sit amet, posuere vitae sem. Proin mi elit, interdum rhoncus lacinia porta, accumsan non ipsum. Donec ac lorem ut lorem sagittis euismod quis vel purus.
 
