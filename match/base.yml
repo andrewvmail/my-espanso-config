@@ -105,4 +105,17 @@ matches:
     replace: |
       React.useEffect(() => {}, []);
 
+  - trigger: ":afile"
+    replace: |
+      import { Overmind, debounce, pipe, rehydrate } from "overmind"; import { Context } from "../.."; export const someAction = async ({ state, effects, actions }: Context) => {}; 
+
+  - trigger: ":sfile"
+    replace: |
+      type State = {}; export const state: State = {}; 
+
+  - trigger: ":ifile"
+    replace: |
+      import * as actions from "./actions"; import { state } from "./state"; export { state, actions };
+
+
 
