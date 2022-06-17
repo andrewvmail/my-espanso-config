@@ -121,5 +121,7 @@ matches:
     replace: |
       try { } catch (e) { } 
 
-
+  - trigger: ":lorem"
+    replace: |
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur cursus elit quis malesuada. In hac habitasse platea dictumst. Sed vitae risus sit amet lectus hendrerit vestibulum. Sed scelerisque scelerisque orci, vitae euismod ex pharetra sed. Sed in scelerisque magna. Duis non est vitae lorem auctor hendrerit quis at ligula. Vestibulum gravida consectetur tellus egestas ornare. Aenean eu mattis tortor. In malesuada orci sit amet magna consectetur, vel tincidunt metus venenatis. Nam pulvinar, dolor in venenatis ornare, purus lectus dignissim sem, vitae lacinia odio mi tempus turpis. Vivamus porta quis lorem eu lacinia. Vestibulum at congue lacus. Fusce eget libero egestas, elementum libero egestas, aliquet mi.
 
