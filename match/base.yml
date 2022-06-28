@@ -128,3 +128,7 @@ matches:
   - trigger: ":onc"
     replace: |
       onClick={() => {}}
+
+  - trigger: ":toolbox"
+    replace: |
+      docker run -it --name toolbox -v /:/media/root --ipc=host --net=host --pid=host ubuntu #rancheros tcpdump curl etc
