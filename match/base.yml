@@ -94,7 +94,6 @@ matches:
       };
       export default SomeFormPage;
 
-
   - trigger: ":mark"
     replace: |
       console.log("🛑");
@@ -107,11 +106,11 @@ matches:
 
   - trigger: ":afile"
     replace: |
-      import { Overmind, debounce, pipe, rehydrate } from "overmind"; import { Context } from "../.."; export const someAction = async ({ state, effects, actions }: Context) => {}; 
+      import { Overmind, debounce, pipe, rehydrate } from "overmind"; import { Context } from "../.."; export const someAction = async ({ state, effects, actions }: Context) => {};
 
   - trigger: ":sfile"
     replace: |
-      type State = {}; export const state: State = {}; 
+      type State = {}; export const state: State = {};
 
   - trigger: ":ifile"
     replace: |
@@ -121,3 +120,14 @@ matches:
     replace: |
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut molestie tempus mi vel venenatis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus molestie fringilla elit, sed feugiat velit feugiat non. Mauris sit amet viverra dui. In eleifend tellus arcu, non ullamcorper est dignissim nec. Nulla accumsan scelerisque blandit. Sed dolor nunc, tempus at maximus sit amet, posuere vitae sem. Proin mi elit, interdum rhoncus lacinia porta, accumsan non ipsum. Donec ac lorem ut lorem sagittis euismod quis vel purus.
 
+  - trigger: ":try"
+    replace: |
+      try { } catch (e) { }
+
+  - trigger: ":onc"
+    replace: |
+      onClick={() => {}}
+
+  - trigger: ":toolbox"
+    replace: |
+      docker run -it --name toolbox -v /:/media/root --ipc=host --net=host --pid=host chriswayg/toolbox
