@@ -131,3 +131,7 @@ matches:
   - trigger: ":toolbox"
     replace: |
       docker run -it --name toolbox -v /:/media/root --ipc=host --net=host --pid=host chriswayg/toolbox
+
+  - trigger: "__filename"
+    replace: |
+      `[ ${__filename} ]`
