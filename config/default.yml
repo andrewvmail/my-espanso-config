@@ -1,3 +1,6 @@
 auto_restart: true
 toggle_key: OFF
 search_shortcut: ALT+SHIFT+SPACE
+# https://github.com/jtroo/espanso/releases/tag/jtroo-v1.0.2
+# fix for running with kanata ahk etc
+win32_exclude_orphan_events: false
