@@ -1,3 +1,7 @@
 matches:
   - trigger: ":kk"
     replace: "break this down to it's radical"
+  - trigger: ":ek"
+    replace: "extract the kanji, make it into a list, put hiragana and it's meaning beside it"
+  - trigger: ":tj"
+    replace: "translate to hiragana and english"
