@@ -2,13 +2,21 @@ matches:
   - trigger: ":espanso"
     replace: "Hi there!"
 
+  - trigger: ":ddd"
+    replace: "{{mydate}}"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%d-%m-%Y"
+
   - trigger: ":date"
     replace: "{{mydate}}"
     vars:
       - name: mydate
         type: date
         params:
-          format: "%m/%d/%Y"
+          format: "%d-%m-%Y"
 
   - trigger: ":shell"
     replace: "{{output}}"
