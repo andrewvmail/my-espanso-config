@@ -1,6 +1,11 @@
 matches:
-  - trigger: ":espanso"
-    replace: "Hi there!"
+  - trigger: ":ipw"
+    replace: "{{output}}"
+    vars:
+      - name: output
+        type: shell
+        params:
+          cmd: "ipconfig | findstr /i \"ipv4\" | awk '{print $14}' | head -1"
 
   - trigger: ":ddd"
     replace: "{{mydate}}"
